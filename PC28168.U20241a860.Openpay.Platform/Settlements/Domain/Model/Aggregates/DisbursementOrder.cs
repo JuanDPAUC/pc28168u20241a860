@@ -16,7 +16,7 @@ public partial class DisbursementOrder
 
     }
     
-    public DisbursementOrder(CreateDibusermentOrderCommand command)
+    public DisbursementOrder(CreateDisbursementOrderCommand command)
     {
         ArgumentNullException.ThrowIfNull(command);
         OrderTrackingCode = command.OrderTrackingCode;
